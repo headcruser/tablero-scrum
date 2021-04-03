@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero Scrum</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="img/logo.svg" alt="Logo Tablero Scrum">
+            <button id="btn-add-task">Agregar Tarea</button>
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+            <h1>Tablero Scrum</h1>
+
+            <div class="container">
+                <h2>Todo</h2>
+                <div class="task-container" id="to-do">
+                </div>                
+            </div>
+
+            <div class="container">
+                <h2>In Progress</h2>
+                <div class="task-container" id="in-progress">
+                </div>
+            </div>
+
+            <div class="container">
+                <h2>Done</h2>
+                <div class="task-container" id="done">
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <aside>
+        <div class="aside-container">
+            <h2>Nueva Tarea</h2>
+            <div class="form-container">
+                <form>
+                    <div class="input-container">
+                        <label for="title-task">Titulo</label>
+                        <input type="text" name="title-task" id="title-task" placeholder="Escribe un titulo descriptivo">
+                    </div>
+                    <div class="input-container">
+                        <label for="person-task">Responsable</label>
+                        <select name="person-task" id="person-task">
+                            <option value="">Selecciona un responsable</option>
+                        </select>
+                    </div>
+                    <div class="input-container">
+                        <label for="date-task">Responsable</label>
+                        <select name="date-task" id="date-task">
+                            <option value="">Selecciona un plazo</option>
+                            <option value="_dia">Un Dia</option>
+                            <option value="_semana">Una semana</option>
+                        </select>
+                    </div>
+
+                    <div class="action-container">
+                        <button type="submit">Guardar</button>
+                        <button type="reset">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </aside>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
