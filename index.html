@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tablero Scrum</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header>
         <div class="header-container">
             <img src="img/logo.svg" alt="Logo Tablero Scrum">
-            <button id="btn-add-task">Agregar Tarea</button>
+            <button class="button" id="btn-add-task">Agregar Tarea</button>
         </div>
     </header>
     <main>
@@ -37,7 +38,7 @@
         </div>
     </main>
     
-    <aside>
+    <aside class="" id="form-container-task">
         <div class="aside-container">
             <h2>Nueva Tarea</h2>
             <div class="form-container">
@@ -63,7 +64,7 @@
 
                     <div class="action-container">
                         <button type="submit">Guardar</button>
-                        <button type="reset">Cancelar</button>
+                        <button type="reset" id="btn-cancel-task">Cancelar</button>
                     </div>
                 </form>
             </div>
@@ -72,6 +73,10 @@
     
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.12/lib/sortable.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/hammer.js"></script>
+    <script src="js/draganddrop.js"></script>
 </body>
 </html>
