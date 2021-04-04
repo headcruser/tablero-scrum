@@ -42,25 +42,39 @@
         <div class="aside-container">
             <h2>Nueva Tarea</h2>
             <div class="form-container">
-                <form>
+                <form id="form-task">
                     <div class="input-container">
                         <label for="title-task">Titulo</label>
-                        <input type="text" name="title-task" id="title-task" placeholder="Escribe un titulo descriptivo">
+                        <input type="text" name="title" id="title-task" placeholder="Escribe un titulo descriptivo" autocomplete="off" required>
                     </div>
                     <div class="input-container">
                         <label for="person-task">Responsable</label>
-                        <select name="person-task" id="person-task">
+                        <select name="person" id="person-task" required>
                             <option value="">Selecciona un responsable</option>
+                            <option value="fany">Fany</option>
+                            <option value="marisol">Marisol</option>
+                            <option value="fernanda">Fernanda</option>
                         </select>
                     </div>
                     <div class="input-container">
-                        <label for="date-task">Responsable</label>
-                        <select name="date-task" id="date-task">
+                        <label for="date-task">Plazo</label>
+                        <select name="plazo" id="date-task" required>
                             <option value="">Selecciona un plazo</option>
                             <option value="_dia">Un Dia</option>
                             <option value="_semana">Una semana</option>
+                            <option value="_mes">Mes</option>
                         </select>
                     </div>
+
+                    <div class="input-container">
+                        <label for="date-task">Estatus</label>
+                        <select name="state" id="date-task" required> 
+                            <option value="to-do">Pendiente</option>
+                            <option value="in-progress">En Progreso</option>
+                            <option value="done">Terminada</option>
+                        </select>
+                    </div>
+
 
                     <div class="action-container">
                         <button type="submit">Guardar</button>
